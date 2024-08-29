@@ -14,17 +14,26 @@ export default function Home() {
     <main className="">
 
       <div>
-        <NextUIProvider className="w-full h-full">
+        <NextUIProvider className="">
           {/* <BlurIn word={"Hello World"}></BlurIn> */}
           {/* <Input type="email" label="Email" placeholder="Enter your email" /> */}
           {/* <MagicCard className="w-24 h-24"></MagicCard> */}
-
-          <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+          <div className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background md:shadow-xl ">
             <p className="z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-white">
-              Ripple
+            Connected
             </p>
             <Ripple />
           </div>
+          <div className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+            <p className="z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-white">
+              Connected
+            </p>
+            <Ripple />
+          </div>
+
+
+
+
         </NextUIProvider>
 
       </div>
